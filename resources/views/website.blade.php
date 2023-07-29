@@ -16,6 +16,19 @@
     body {
 
     }
+
+    .f-14 {
+        font-size: 14px;
+        line-height: 1rem;
+    }
+
+    /*Small devices (landscape phones, less than 768px)*/
+    @media (max-width: 768px) {
+        #category-3 > div.row  div.col-md-6:nth-child(2){
+            margin-top: 1rem;
+        }
+    }
+
 </style>
 <body>
 
@@ -149,6 +162,12 @@
         </div>
     </div>
 </section>
+<section id="category-3" class="container mb-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6 d-flex flex-wrap"><img style="max-width: 100%; object-fit: contain; border-radius: 5px" src="https://bike24.ir/wp-content/uploads/2023/06/f1b.webp" alt=""></div>
+        <div class="col-md-6 d-flex flex-wrap"><img style="max-width: 100%; object-fit: contain; border-radius: 5px" src="https://bike24.ir/wp-content/uploads/2023/06/f1b.webp" alt=""></div>
+    </div>
+</section>
 <section id="working-brands" class="container-fluid d-flex justify-content-center mb-4">
     <div class="container text-center">
         <p class="mb-3">برند هایی که کار میکنیم</p>
@@ -217,14 +236,14 @@
                 </div>
                 <div class="col-md-3"></div>
                 <div class="social-media col-md-3 row">
-                    <div>
+                    <div class="col-12 mb-3">
                         <p>
                             راه های ارتباطی
                         </p>
                         <a href="#">قزوین، چهارراه نظام وفا</a>
                         <a href="#">hoordadco.info@gmial.com</a>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 mb-3">
                         <p class="col-12">صفحات مجازی ما</p>
 
                         <a href="">
@@ -272,12 +291,14 @@
                     </div>
                 </a>
             </div>
+            </div>
     </footer>
 </section>
 <section id="copy-right" class="container-fluid text-center py-2">
     <p class="m-0">
-        {{-- //todo --}}
-        <a href="#">todo</a>
+        <a href="#" class="f-14">تمامی حقوق برای فروشگاه اینترنتی هورداد محفوظ است. 1402</a>
+        <br/>
+        <a class="f-14" href="https://github.com/alisalehi0930" target="_blank">Designed by Ali Salehi</a>
     </p>
 </section>
 
