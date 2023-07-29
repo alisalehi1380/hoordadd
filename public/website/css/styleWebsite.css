@@ -27,3 +27,6 @@ a:hover {
 body{
     font-family: IRANSansWeb;
 }
+img{
+    max-width: 100%;
+}
