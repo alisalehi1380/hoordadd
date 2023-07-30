@@ -11,6 +11,7 @@
     <meta name="description" content="هر آنچه که نیاز دارید با بهترین قیمت از فروشگاه هورداد بخرید! جدیدترین انواع کنتاکتور - بانک خازنی - اینورترر - ارسال به سراسر ایران">
     <link rel="stylesheet" href="{{ asset('bootstrap/bootstrap.rtl.css') }}">
     <link rel="stylesheet" href="{{ asset('website/css/styleWebsite.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 </head>
 <style>
     body {
@@ -154,7 +155,7 @@
         </div>
     </div>
 </section>
-<section id="category-2" class="container-fluid d-flex justify-content-center mb-2rem" style="background-color: #EFEFEF">
+<section id="category-1" class="container-fluid d-flex justify-content-center mb-2rem" style="background-color: #EFEFEF">
     <div class="container row text-center" style="padding: 2.5rem 0;">
         <a class="col-md-2" href="#">
             <img src="{{ asset('website/img/category/1/light-switch.png') }}" alt="product->title">
@@ -231,25 +232,44 @@
     <div class="container text-center">
         <p class="mb-3">برند هایی که کار میکنیم</p>
         <hr/>
-        <div class="row" style="padding: 2.5rem 0;">
-            <a class="col-md-2" href="#">
-                <img style="max-height: 80px; max-width: 80px" src="https://i-wordpress.ir/woodland/noorkala/wp-content/uploads/2022/07/part.jpg" alt="product->title">
-            </a>
-            <a class="col-md-2" href="#">
-                <img style="max-height: 80px; max-width: 80px" src="https://i-wordpress.ir/woodland/noorkala/wp-content/uploads/2022/07/part.jpg" alt="product->title">
-            </a>
-            <a class="col-md-2" href="#">
-                <img style="max-height: 80px; max-width: 80px" src="https://i-wordpress.ir/woodland/noorkala/wp-content/uploads/2022/07/part.jpg" alt="product->title">
-            </a>
-            <a class="col-md-2" href="#">
-                <img style="max-height: 80px; max-width: 80px" src="https://i-wordpress.ir/woodland/noorkala/wp-content/uploads/2022/07/part.jpg" alt="product->title">
-            </a>
-            <a class="col-md-2" href="#">
-                <img style="max-height: 80px; max-width: 80px" src="https://i-wordpress.ir/woodland/noorkala/wp-content/uploads/2022/07/part.jpg" alt="product->title">
-            </a>
-            <a class="col-md-2" href="#">
-                <img style="max-height: 80px; max-width: 80px" src="https://i-wordpress.ir/woodland/noorkala/wp-content/uploads/2022/07/part.jpg" alt="product->title">
-            </a>
+        <div class="row swiper" style="padding: 2.5rem 0;">
+
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <a class="swiper-slide" href="#">
+                    <img style="max-height: 80px; max-width: 80px" src="https://i-wordpress.ir/woodland/noorkala/wp-content/uploads/2022/07/part.jpg" alt="product->title">
+                </a>
+                <a class="swiper-slide" href="#">
+                    <img style="max-height: 80px; max-width: 80px" src="https://i-wordpress.ir/woodland/noorkala/wp-content/uploads/2022/07/part.jpg" alt="product->title">
+                </a>
+                <a class="swiper-slide" href="#">
+                    <img style="max-height: 80px; max-width: 80px" src="https://i-wordpress.ir/woodland/noorkala/wp-content/uploads/2022/07/part.jpg" alt="product->title">
+                </a>
+                <a class="swiper-slide" href="#">
+                    <img style="max-height: 80px; max-width: 80px" src="https://i-wordpress.ir/woodland/noorkala/wp-content/uploads/2022/07/part.jpg" alt="product->title">
+                </a>
+                <a class="swiper-slide" href="#">
+                    <img style="max-height: 80px; max-width: 80px" src="https://i-wordpress.ir/woodland/noorkala/wp-content/uploads/2022/07/part.jpg" alt="product->title">
+                </a>
+                <a class="swiper-slide" href="#">
+                    <img style="max-height: 80px; max-width: 80px" src="https://i-wordpress.ir/woodland/noorkala/wp-content/uploads/2022/07/part.jpg" alt="product->title">
+                </a>
+                <a class="swiper-slide" href="#">
+                    <img style="max-height: 80px; max-width: 80px" src="https://i-wordpress.ir/woodland/noorkala/wp-content/uploads/2022/07/part.jpg" alt="product->title">
+                </a>
+                <a class="swiper-slide" href="#">
+                    <img style="max-height: 80px; max-width: 80px" src="https://i-wordpress.ir/woodland/noorkala/wp-content/uploads/2022/07/part.jpg" alt="product->title">
+                </a>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </div>
 </section>
@@ -284,9 +304,9 @@
                 </div>
             </div>
             <div class="col-md-6 row">
-                <div class="col-6 d-flex justify-content-center">
+                <div class="col d-flex justify-content-center">
                     <div>
-                        <a href="#" class="d-block mb-3">اطلاعات بیشتر</a>
+                        <p href="#" class="d-block mb-3">اطلاعات بیشتر</p>
                         <ul class="" style="list-style-type: disc; color: #777;">
                             <li><a href="#">سوالات متداول</a></li>
                             <li><a href="#">ارتباط با ما</a></li>
@@ -296,9 +316,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-6 d-flex justify-content-center">
+                <div class="col d-flex justify-content-center">
                     <div>
-                        <a href="#" class="d-block mb-3">دسته بندی محصولات</a>
+                        <p href="#" class="d-block mb-3">دسته بندی محصولات</p>
                         <ul style="list-style-type: disc; color: #777;">
                             <li><a href="#">سوالات متداول</a></li>
                             <li><a href="#">ارتباط با ما</a></li>
@@ -357,6 +377,53 @@
         <a class="f-14" href="https://github.com/alisalehi0930" target="_blank">Designed by Ali Salehi</a>
     </p>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 3,
+                spaceBetween: 60
+            },
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 4,
+                spaceBetween: 80
+            },
+            992: {
+                slidesPerView: 5,
+                spaceBetween: 60
+            }
+        },
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+</script>
+
 
 <script src="{{ asset('bootstrap/bootstrap.bundle.min.js') }}"></script>
 <script>
