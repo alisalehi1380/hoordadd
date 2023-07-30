@@ -31,6 +31,16 @@
         border-radius: 5px;
     }
 
+    #navbar nav div ul > li > a {
+        color: #616161;
+        font-size: 13px;
+    }
+
+    #navbar nav div ul > li:hover {
+        border-bottom: 2px solid rgb(246, 65, 45);
+        /*transition: all 0.3s ease-in-out;*/
+    }
+
     /*Small devices (landscape phones, less than 768px)*/
     @media (max-width: 768px) {
         #banner-1 div.container > .row > .col-md-8 > .col-md-4 {
@@ -49,7 +59,7 @@
 <body>
 
 <section id="navbar" class="container-fluid">
-    <nav class="row justify-content-between align-items-center" style="padding: 1rem 0;max-width: 1500px;margin: auto;">
+    <div class="row justify-content-between align-items-center" style="padding: 1rem 0;max-width: 1500px;margin: auto;">
         <div class="d-flex col-md-8 align-items-center">
             <div class="col-md-2">
                 <a href="#/"><img src="{{ asset('website/img/logo-hoordad-nav.png') }}" style="max-width: 100px"></a>
@@ -92,7 +102,32 @@
                 </div>
             </div>
         </div>
+    </div>
+
+
+    <nav class="navbar justify-content-between align-items-center" style="max-width: 1500px;margin: auto;">
+        <div class="">
+            <ul class="d-flex">
+                <li class="nav-item" style="border-left: 1px solid #e0e0e2;"><a class="nav-link" href="">دسته بندی تجهیزات</a></li>
+                <li class="nav-item" style="border-left: 1px solid #e0e0e2;"><a class="nav-link" href="">برند ها</a></li>
+                <li class="nav-item"><a class="nav-link" href=""><span class=""></span><span class="">خانه</span></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><span class=""></span><span class="">مجله تخصصی ( آموزش جامع )</span></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><span class=""></span><span class="">استخدام در تسلاکالا</span></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><span class=""></span><span class="">همکاری فروشندگان با تسلاکالا</span></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><span class=""></span><span class="">تماس با ما (۰۲۱۹۱۰۲۶۱۲۶)</span></a></li>
+            </ul>
+        </div>
+
+        <div class="">
+            <ul class="">
+                <li>
+                    <a href="">پیشنهادهای شگفت انگیز</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+
+
 </section>
 <section id="banner-1" class="container-fluid mb-2rem" style="background-color: #EFEFEF; padding: 2.5rem 0;">
     <div class="container">
@@ -431,3 +466,430 @@
 </script>
 </body>
 </html>
+
+
+{{--<div id="categories" class="">--}}
+{{--    <ul class="">--}}
+{{--        <li><a>انواع خازن و تجهیزات بانک خازنی</a>--}}
+{{--            <ul class="sub-menu sub-menu-height">--}}
+{{--                <li><a href="">خازن سه فاز فشار ضعیف</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">خازن سه فاز فراکو آلمان FRAKO</a></li>--}}
+{{--                        <li><a href="">خازن سه فاز لیفاسا اسپانیا LIFASA</a></li>--}}
+{{--                        <li><a href="">خازن سه فاز صبا زیمنس SABA-SIEMENS</a></li>--}}
+{{--                        <li><a href="">خازن سه فاز روغنی هیدرا (HYDRA ( AEG</a></li>--}}
+{{--                        <li><a href="">خازن سه فاز PKC</a></li>--}}
+{{--                        <li><a href="">خازن سه فاز اشنایدر SCHNEIDER</a></li>--}}
+{{--                        <li><a href="">خازن سه فاز فراکوه FARAKOH</a></li>--}}
+{{--                        <li><a href="">خازن سه فاز اسپانیایی RTR</a></li>--}}
+{{--                        <li><a href="">خازن سه فاز فشار ضعیف ایسکرا ISKRA</a></li>--}}
+{{--                        <li><a href="">خازن سه فاز اپکاس آلمان EPCOS</a></li>--}}
+{{--                        <li><a href="">خازن سه فاز پارس شریم PARS.GH</a></li>--}}
+{{--                        <li><a href="">سایر برندهای خازن سه فاز</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">رگولاتور بانک خازنی</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">رگولاتور بلوک آلمان BELUK</a></li>--}}
+{{--                        <li><a href="">رگولاتور فراکو آلمان FRAKO</a></li>--}}
+{{--                        <li><a href="">رگولاتور زایلوگ ایران ZILUG</a></li>--}}
+{{--                        <li><a href="">رگولاتور لیفاسا اسپانیا LIFASA</a></li>--}}
+{{--                        <li><a href="">رگولاتور RTR اسپانیا</a></li>--}}
+{{--                        <li><a href="">رگولاتور خازنی PKC</a></li>--}}
+{{--                        <li><a href="">رگولاتور ایسکرا ISKRA</a></li>--}}
+{{--                        <li><a href="">رگولاتور سیرکاتور اسپانیا CIRCUTOR</a></li>--}}
+{{--                        <li><a href="">رگولاتور لواتو ایتالیا LOVATO</a></li>--}}
+{{--                        <li><a href="">رگولاتور خازنی اشنایدر SCHNEIDER</a></li>--}}
+{{--                        <li><a href="">رگولاتور پارس مت PARS-MAT</a></li>--}}
+{{--                        <li><a href="">سایر برند های رگولاتور بانک خازنی</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">کنتاکتور خازنی</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">کنتاکتور خازنی PKC</a></li>--}}
+{{--                        <li><a href="">کنتاکتور خازنی R K (RADE CONCAR)</a></li>--}}
+{{--                        <li><a href="">کنتاکتور خازنی اشنایدر SCHNEIDER</a></li>--}}
+{{--                        <li><a href="">کنتاکتور خازنی ABN</a></li>--}}
+{{--                        <li><a href="">سایر برندهای کنتاکتور خازنی</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">فیلتر هارمونیک خازنی</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">فیلتر هارمونیک فراکوه FARAKOH</a></li>--}}
+{{--                        <li><a href="">فیلتر هارمونیك لیفاسا LIFASA</a></li>--}}
+{{--                        <li><a href="">فیلتر هارمونیك PKC</a></li>--}}
+{{--                        <li><a href="">فیلتر هارمونیک پارس PARS GH. SHREEM</a></li>--}}
+{{--                        <li><a href="">فیلتر هارمونیک فراپیام BERK</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li>--}}
+{{--                    <a href="">کنتاکتور هارمونیکی</a></li>--}}
+{{--                <li><a>بانک خازنی اتوماتیک آماده نصب</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">سه فاز، آماده نصب، برحسب کیلووار</a></li>--}}
+{{--                        <li><a href="">تکفاز/ سه فاز، آماده نصب، برحسب آمپر</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">بدنه، مونتاژ و خدمات تابلو بانک خازنی</a></li>--}}
+{{--                <li><a href="">تجهیزات بانک خازنی فشار متوسط</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">خازن فشار متوسط MV</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">کنتاکتور خازنی تایریستوری ( سریع )</a></li>--}}
+{{--                <li><a href="">رگولاتور تایریستوری ( سریع )</a></li>--}}
+{{--                <li><a href="">خازن تکفاز فشار ضعیف</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">خازن تکفاز فشار ضعیف ایتالیا DUCATI</a></li>--}}
+{{--                        <li><a href="">خازن تکفاز فشار ضعیف PKC</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">خازن برای سایر کاربردها</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">خازن UPS</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--            </ul>--}}
+{{--        </li>--}}
+{{--        <li class=""><a>انواع کنتاکتور، بیمتال و رله</a>--}}
+{{--            <ul class="sub-menu sub-menu-height">--}}
+{{--                <li><a href="">کنتاکتور</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">کنتاکتور اشنایدر SCHNEIDER</a></li>--}}
+{{--                        <li><a href="">کنتاکتور هیمل Himel</a></li>--}}
+{{--                        <li><a href="">کنتاکتور هیوندای HYUNDAI</a></li>--}}
+{{--                        <li><a href="">کنتاکتور ال اس LS</a></li>--}}
+{{--                        <li><a href="">کنتاکتور چینت CHINT</a></li>--}}
+{{--                        <li><a href="">کنتاکتور لواتو ایتالیا LOVATO</a></li>--}}
+{{--                        <li><a href="">کنتاکتور RK</a></li>--}}
+{{--                        <li><a href="">کنتاکتور پارس فانال P&amp;F</a></li>--}}
+{{--                        <li><a href="">کنتاکتور ETI</a></li>--}}
+{{--                        <li><a href="">کنتاکتور زیمنس SIEMENS</a></li>--}}
+{{--                        <li><a href="">سایر برندهای کنتاکتور</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">کنتاکت کمکی کنتاکتورها</a></li>--}}
+{{--                <li><a href="">کنتاکتور خازنی</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">کنتاکتور خازنی LIFASA</a></li>--}}
+{{--                        <li><a href="">کنتاکتور خازنی PKC</a></li>--}}
+{{--                        <li><a href="">کنتاکتور خازنی R K (RADE CONCAR)</a></li>--}}
+{{--                        <li><a href="">کنتاکتور خازنی اشنایدر SCHNEIDER</a></li>--}}
+{{--                        <li><a href="">کنتاکتور خازنی HYUNDAI</a></li>--}}
+{{--                        <li><a href="">کنتاکتور خازنی LS</a></li>--}}
+{{--                        <li><a href="">سایر برندهای کنتاکتور خازنی</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li>--}}
+{{--                    <a href="">کنتاکتور هارمونیکی</a></li>--}}
+{{--                <li><a href="">رله مینیاتوری ( شیشه ای )</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">رله شیشه ای فیندر finder</a></li>--}}
+{{--                        <li><a href="">رله شیشه ای پارس فانال P &amp; F</a></li>--}}
+{{--                        <li><a href="">رله شیشه ای آلمانی weidmuller</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">بیمتال ( رله حرارتی کنتاکتور)</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">بیمتال اشنایدر SCHNEIDER</a></li>--}}
+{{--                        <li><a href="">بیمتال HIMEL</a></li>--}}
+{{--                        <li><a href="">بیمتال هیوندای HYUNDAI</a></li>--}}
+{{--                        <li><a href="">بیمتال LS</a></li>--}}
+{{--                        <li><a href="">بیمتال CHINT</a></li>--}}
+{{--                        <li><a href="">بیمتال پارس فانال P&amp;F</a></li>--}}
+{{--                        <li><a href="">بیمتال زیمنس SIEMENS</a></li>--}}
+{{--                        <li><a href="">بیمتال LOVATO</a></li>--}}
+{{--                        <li><a href="">سایر برندهای بیمتال</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">کنتاکتور تکفاز ( ماژولار – بی صدا )</a></li>--}}
+{{--                <li><a href="">کنتاکتور تایریستوری</a></li>--}}
+{{--                <li><a href="">رله SSR و EMR</a></li>--}}
+{{--            </ul>--}}
+{{--        </li>--}}
+{{--        <li><a>انواع کلید اتوماتیک / دستی و فیوز</a>--}}
+{{--            <ul class="sub-menu sub-menu-height">--}}
+{{--                <li><a href="">کلید اتوماتیک (کمپکت MCCB )</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">کلید اتوماتیک (MCCB) هیوندای HYUNDAI</a></li>--}}
+{{--                        <li><a href="">کلید اتوماتیک (MCCB) هیمل Himel</a></li>--}}
+{{--                        <li><a href="">کلید اتوماتیک (MCCB) اشنایدر SCHNEIDER</a></li>--}}
+{{--                        <li><a href="">کلید اتوماتیک (MCCB) ال اس LS</a></li>--}}
+{{--                        <li><a href="">کلید اتوماتیک (MCCB) چینت CHINT</a></li>--}}
+{{--                        <li><a href="">کلید اتوماتیک (MCCB) برند ABB</a></li>--}}
+{{--                        <li><a href="">کلید اتوماتیک (MCCB) پارس فانال P&amp;F</a></li>--}}
+{{--                        <li><a href="">کلید اتوماتیک (MCCB) یونلک UNELEC</a></li>--}}
+{{--                        <li><a href="">کلید اتوماتیک (MCCB) زیمنس SIEMENS</a></li>--}}
+{{--                        <li><a href="">سایر برندهای کلید اتوماتیک (MCCB)</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">تجهیزات جانبی کلید اتوماتیک (MCCB)</a></li>--}}
+{{--                <li><a href="">کلید هوایی (ACB)</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">کلید هوایی (ACB) هیوندای HYUNDAI</a></li>--}}
+{{--                        <li><a href="">کلید هوایی (ACB) ال اس LS</a></li>--}}
+{{--                        <li><a href="">کلید هوایی CHINT</a></li>--}}
+{{--                        <li><a href="">سایر برندهای کلید هوایی</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">کلید حرارتی ( محافظ موتور ) MPCB</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">کلید حرارتی اشنایدر SCHNEIDER</a></li>--}}
+{{--                        <li><a href="">کلید حرارتی هیوندای HYUNDAI</a></li>--}}
+{{--                        <li><a href="">کلید حرارتی LS</a></li>--}}
+{{--                        <li><a href="">کلید حرارتی Himel</a></li>--}}
+{{--                        <li><a href="">سایر برندهای کلید حرارتی</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">تجهیزات جانبی کلیدحرارتی</a></li>--}}
+{{--                <li><a href="">کلید مینیاتوری (MCB)</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">کلید مینیاتوری اشنایدر SCHNEIDER</a></li>--}}
+{{--                        <li><a href="">کلید مینیاتوری LS</a></li>--}}
+{{--                        <li><a href="">کلید مینیاتوری هیوندای HYUNDAI</a></li>--}}
+{{--                        <li><a href="">کلید مینیاتوری پارس فانال P &amp; F</a></li>--}}
+{{--                        <li><a href="">سایر برندهای کلید مینیاتوری</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">کلیدهای فشار متوسط</a></li>--}}
+{{--                <li><a href="">کلید فیوز گردان و چنج آور قدرت</a></li>--}}
+{{--                <li><a href="">کلید گردان سلکتوری</a></li>--}}
+{{--                <li><a href="">کلید محافظ جان (RCCB و RCBO )</a></li>--}}
+{{--                <li><a href="">کلید فیوز</a></li>--}}
+{{--                <li><a href="">فیوز و پایه فیوز</a></li>--}}
+{{--            </ul>--}}
+{{--        </li>--}}
+{{--        <li><a href="">انواع درایو (اینورتر) و سافت استارتر</a>--}}
+{{--            <ul class="sub-menu sub-menu-height">--}}
+{{--                <li><a href="">درایو ( اینورتر)</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">درایو ( اینورتر ) کنترل دور موتور LS</a></li>--}}
+{{--                        <li><a href="">درایو (اینورتر) کنترل دور موتور اینوت INVT</a></li>--}}
+{{--                        <li><a href="">درایو (اینورتر) کنترل دور موتور پنتاکسPentax</a></li>--}}
+{{--                        <li><a href="">درایو (اینورتر) کنترل دور موتور SIEMENS</a></li>--}}
+{{--                        <li><a href="">درایو ( اینورتر ) کنترل دور موتور دلتا DELTA</a></li>--}}
+{{--                        <li><a href="">درایو (اینورتر) کنترل دور موتور سانیو SANYU</a></li>--}}
+{{--                        <li><a href="">درایو (اینورتر) کنترل دور موتور مگا درایو MEGA</a></li>--}}
+{{--                        <li><a href="">درایو (اینورتر) کنترل دور موتور YASKAWA</a></li>--}}
+{{--                        <li><a href="">درایو (اینورتر) کنترل دور موتور ABB</a></li>--}}
+{{--                        <li><a href="">درایو (اینورتر) کنترل دور پرتوصنعت parto sanat</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">سافت استارتر ( راه انداز نرم )</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">سافت استارتر هیمل HIMEL</a></li>--}}
+{{--                        <li><a href="">سافت استارتر زیمنس SIEMENS</a></li>--}}
+{{--                        <li><a href="">سافت استارتر SANYU سانیو</a></li>--}}
+{{--                        <li><a href="">سافت استارتر سانترنو Santerno</a></li>--}}
+{{--                        <li><a href="">سافت استارتر ABB</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--            </ul>--}}
+{{--        </li>--}}
+{{--        <li><a href="">انواع سیم و کابل</a>--}}
+{{--            <ul class="sub-menu sub-menu-height">--}}
+{{--                <li><a href="">سیم و کابل افشان</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">سیم و کابل افشان افشار نژاد خراسان</a></li>--}}
+{{--                        <li><a href="">سیم و کابل افشان مغان</a></li>--}}
+{{--                        <li><a href="">سیم و کابل افشان البرز الکتریک نور(لینکو)</a></li>--}}
+{{--                        <li><a href="">سیم و کابل افشان نور زنجان</a></li>--}}
+{{--                        <li><a href="">سیم و کابل افشان البرز پژواک</a></li>--}}
+{{--                        <li><a href="">سیم و کابل افشان کسری (برند متوسط)</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">سیم افشان ارت</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">سیم افشان ارت البرز الکتریک نور(لینکو)</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">کابل افشان شیلددار</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">کابل افشان شیلددار افشار نژاد خراسان</a></li>--}}
+{{--                        <li><a href="">کابل افشان شیلددار البرز الکتریک نور(لینکو)</a></li>--}}
+{{--                        <li><a href="">کابل افشان شیلددار نور زنجان</a></li>--}}
+{{--                        <li><a href="">کابل افشان شیلددار کسری (برند متوسط)</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">سیم و کابل مفتولی</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">کابل مفتولی (زمینی) افشار نژاد خراسان</a></li>--}}
+{{--                        <li><a href="">کابل زمینی مغان</a></li>--}}
+{{--                        <li><a href="">سیم و کابل مفتولی البرز الکتریک نور(لینکو)</a></li>--}}
+{{--                        <li><a href="">سیم و کابل مفتولی (زمینی) نور زنجان</a></li>--}}
+{{--                        <li><a href="">سیم و کابل مفتولی البرز پژواک</a></li>--}}
+{{--                        <li><a href="">کابل مفتولی (زمینی) کسری (برند متوسط)</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">کابل مخابراتی</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">کابل مخابراتی افشار نژاد خراسان</a></li>--}}
+{{--                        <li><a href="">کابل مخابراتی البرز الکتریک نور(لینکو)</a></li>--}}
+{{--                        <li><a href="">کابل مخابراتی نور زنجان</a></li>--}}
+{{--                        <li><a href="">کابل مخابراتی کسری (برند متوسط)</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">سایر انواع کابل</a></li>--}}
+{{--            </ul>--}}
+{{--        </li>--}}
+{{--        <li><a href="">سایر تجهیزات برق صنعتی</a>--}}
+{{--            <ul class="sub-menu sub-menu-height">--}}
+{{--                <li><a href="">کنترل فاز</a></li>--}}
+{{--                <li><a href="">سرج ارستر</a></li>--}}
+{{--                <li><a href="">تایمر و ساعت فرمان</a></li>--}}
+{{--                <li><a href="">منبع تغذیه</a></li>--}}
+{{--                <li><a href="">فن تابلویی</a></li>--}}
+{{--                <li><a href="">ترموستات تابلویی</a></li>--}}
+{{--                <li><a href="">چراغ سیگنال</a></li>--}}
+{{--                <li><a href="">ترمینال ریلی</a></li>--}}
+{{--                <li><a href="">ترمینال جریانی</a></li>--}}
+{{--                <li><a href="">ترمینال فیوز خور</a></li>--}}
+{{--                <li><a href="">رطوبت سنج تابلویی</a></li>--}}
+{{--                <li><a href="">هیتر تابلویی</a></li>--}}
+{{--                <li><a href="">ترنسدیوسر</a></li>--}}
+{{--                <li><a href="">کنترل بار</a></li>--}}
+{{--                <li><a href="">محافظ مرکزی برق</a></li>--}}
+{{--                <li><a href="">میکروسوئیچ</a></li>--}}
+{{--                <li><a href="">فلوتر</a></li>--}}
+{{--                <li><a href="">ترانس جریان</a></li>--}}
+{{--                <li><a href="">نمایشگرها (دیجیتال و عقربه ای)</a></li>--}}
+{{--                <li><a href="">کلید فشاری فرمان ( شستی)</a></li>--}}
+{{--                <li><a href="">کلید گردان سلکتوری</a></li>--}}
+{{--                <li><a href="">ریل تابلویی</a></li>--}}
+{{--                <li><a href="">داکت تابلویی</a></li>--}}
+{{--                <li><a href="">گلند تابلویی</a></li>--}}
+{{--                <li><a href="">روشنایی تابلویی</a></li>--}}
+{{--                <li><a href="">فتوسل و ساعت نجومی</a></li>--}}
+{{--                <li><a href="">رله ارت فالت و ترانس کوربالانس</a></li>--}}
+{{--                <li><a href="">سوکت تابلویی</a></li>--}}
+{{--                <li><a href="">رله های حفاظتی فشار متوسط</a></li>--}}
+{{--                <li><a href="">پنجره آلارم</a></li>--}}
+{{--                <li><a href="">مقره اتکایی تابلویی</a></li>--}}
+{{--                <li><a href="">پریز تابلویی</a></li>--}}
+{{--                <li><a href="">رله ضربه‌ای</a></li>--}}
+{{--                <li><a href="">شمش مسی</a></li>--}}
+{{--                <li><a href="">شینه ارت و نول</a></li>--}}
+{{--            </ul>--}}
+{{--        </li>--}}
+{{--        <li><a href="">انواع تابلو برق صنعتی</a>--}}
+{{--            <ul class="sub-menu sub-menu-height">--}}
+{{--                <li><a href="">بدنه تابلو برق ( بدون لوازم و مونتاژ )</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">بدنه تابلو فلزی ایستاده</a></li>--}}
+{{--                        <li><a href="">بدنه تابلو فلزی دیواری</a></li>--}}
+{{--                        <li><a href="">بدنه تابلو پلاستیکی ABS</a></li>--}}
+{{--                        <li><a href="">بدنه تابلو کامپوزیتی</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">خدمات مونتاژ و سیم کشی تابلو برق</a></li>--}}
+{{--                <li><a href="">تابلو فشارمتوسط (با لوازم و مونتاژ کامل)</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">تابلو فشار متوسط سنتی</a></li>--}}
+{{--                        <li><a href="">تابلو فشار متوسط کشویی</a></li>--}}
+{{--                        <li><a href="">تابلو فشار متوسط کمپکت</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li><a href="">تابلو فشارضعیف (با لوازم و مونتاژ کامل)</a>--}}
+{{--                    <ul class="sub-menu">--}}
+{{--                        <li><a href="">تابلو کنتوری ( تابلو برق خانگی)</a></li>--}}
+{{--                        <li><a href="">تابلو دیماندی</a></li>--}}
+{{--                        <li><a href="">تابلو شالتر</a></li>--}}
+{{--                        <li><a href="">تابلو ترمینال</a></li>--}}
+{{--                        <li><a href="">تابلو قدرت و توزیع</a></li>--}}
+{{--                        <li><a href="">تابلو مرکز کنترل موتور (MCC)</a></li>--}}
+{{--                        <li><a href="">تابلو چنج اور ( دیزل ژنراتور)</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--            </ul>--}}
+{{--        </li>--}}
+{{--    </ul>--}}
+{{--</div>--}}
+
+
+{{-------------------------------}}
+
+
+{{--<div id="navbar-brands" class="">--}}
+{{--    <ul>--}}
+{{--        <li><a href="">همه برندها ( اینجا کلیک کنید )</a></li>--}}
+{{--        <li><a>برندهای پرکاربرد کلید و کنتاکتور</a>--}}
+{{--            <ul class="sub-menu sub-menu-height">--}}
+{{--                <li><a href="">SCHNEIDER</a></li>--}}
+{{--                <li><a href="">HYUNDAI</a></li>--}}
+{{--                <li><a href="">LS</a></li>--}}
+{{--                <li><a href="">HIMEL</a></li>--}}
+{{--                <li><a href="">LOVATO</a></li>--}}
+{{--                <li><a href="">CHINT</a></li>--}}
+{{--                <li><a href="">EFEN</a></li>--}}
+{{--                <li><a href="">FINDER</a></li>--}}
+{{--                <li><a href="">PARS FANAL</a></li>--}}
+{{--                <li><a href="">UNELEC</a></li>--}}
+{{--                <li><a href="">SIEMENS</a></li>--}}
+{{--                <li><a href="">ABB</a></li>--}}
+{{--            </ul>--}}
+{{--        </li>--}}
+{{--        <li><a>برندهای پرکاربرد خازن</a>--}}
+{{--            <ul class="sub-menu sub-menu-height">--}}
+{{--                <li><a href="">FRAKO</a></li>--}}
+{{--                <li><a href="">EPCOS</a></li>--}}
+{{--                <li><a href="">LIFASA</a></li>--}}
+{{--                <li><a href="">PKC</a></li>--}}
+{{--                <li><a href="">SABA-SIEMENS</a></li>--}}
+{{--                <li><a href="">CIRCUTOR</a></li>--}}
+{{--                <li><a href="">DUCATI</a></li>--}}
+{{--                <li><a href="">ISKRA</a></li>--}}
+{{--                <li><a href="">RTR</a></li>--}}
+{{--                <li><a href="">FARAKOH</a></li>--}}
+{{--                <li><a href="">SHREEM</a></li>--}}
+{{--                <li><a href="">HYDRA</a></li>--}}
+{{--            </ul>--}}
+{{--        </li>--}}
+{{--        <li><a>برندهای پرکاربرد رگولاتور خازنی</a>--}}
+{{--            <ul class="sub-menu sub-menu-height">--}}
+{{--                <li><a href="">PKC</a></li>--}}
+{{--                <li><a href="">FRAKO</a></li>--}}
+{{--                <li><a href="">BELUK</a></li>--}}
+{{--                <li><a href="">LIFASA</a></li>--}}
+{{--                <li><a href="">ISKRA</a></li>--}}
+{{--                <li><a href="">LOVATO</a></li>--}}
+{{--                <li><a href="">ZILUG</a></li>--}}
+{{--                <li><a href="">CIRCUTOR</a></li>--}}
+{{--                <li><a href="">RTR</a></li>--}}
+{{--            </ul>--}}
+{{--        </li>--}}
+{{--        <li><a>برندهای پرکاربرد اینورتر و سافت استارتر</a>--}}
+{{--            <ul class="sub-menu sub-menu-height">--}}
+{{--                <li><a href="">INVT</a></li>--}}
+{{--                <li><a href="">LS</a></li>--}}
+{{--                <li><a href="">PENTAX</a></li>--}}
+{{--                <li><a href="">PARTO SANAT</a></li>--}}
+{{--                <li><a href="">SANTERNO</a></li>--}}
+{{--                <li><a href="">MEGA DRIVE</a></li>--}}
+{{--                <li><a href="">YASKAWA</a></li>--}}
+{{--                <li><a href="">SIEMENS</a></li>--}}
+{{--                <li><a href="">DELTA</a></li>--}}
+{{--                <li><a href="">ABB</a></li>--}}
+{{--            </ul>--}}
+{{--        </li>--}}
+{{--        <li><a>برندهای پرکاربرد سیم و کابل</a>--}}
+{{--            <ul class="sub-menu sub-menu-height">--}}
+{{--                <li><a href="">افشار نژاد خراسان</a></li>--}}
+{{--                <li><a href="">البرز الکتریک نور (لینکو)</a></li>--}}
+{{--                <li><a href="">نور زنجان</a></li>--}}
+{{--                <li><a href="">مغان (MOGHAN)</a></li>--}}
+{{--                <li><a href="">البرز پژواک</a></li>--}}
+{{--                <li><a href="">کسری (KASRA) (برند متوسط)</a></li>--}}
+{{--            </ul>--}}
+{{--        </li>--}}
+{{--    </ul>--}}
+{{--</div>--}}
+
+
+
+
+
+
+
+
+
+
