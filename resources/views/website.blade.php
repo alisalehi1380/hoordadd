@@ -44,40 +44,54 @@
             margin-top: 1rem;
         }
     }
-
 </style>
 <body>
 
 <section id="navbar" class="container-fluid">
-    <div class="container">
-        <nav class="row">
-            <div class="d-flex col-md-8 align-items-center justify-content-between">
-                <div class="col-md-3" style="padding: 2rem 0;">
-                    <a href="#/"><img src="{{ asset('website/img/logo-hoordad-nav.png') }}" style="max-width: 100px"></a>
-                </div>
-                <div class="col-md-9 d-flex justify-content-end" style="padding:2rem;">
-                    <div class="w-100" style="border: 2px solid #e0e0e0; border-radius:5px">
-                        <form action="" class="w-100" style="border-radius: 5px;">
-                            <input class="w-100" value="" type="text" placeholder="جستجوی محصولات" style="border-radius: 5px; padding: 10px;font-size: 13px; color: #c0c0c0">
-                            {{--                    <button class="btn btn-primary" type="submit">send</button>--}}
-                        </form>
-                    </div>
-                </div>
+    <nav class="row justify-content-between align-items-center" style="padding: 1rem 0;max-width: 1500px;margin: auto;">
+        <div class="d-flex col-md-8 align-items-center">
+            <div class="col-md-2">
+                <a href="#/"><img src="{{ asset('website/img/logo-hoordad-nav.png') }}" style="max-width: 100px"></a>
             </div>
-            <div class="row col-md-4" style="padding: 2rem 0;">
-                <div class="col-md-7">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-6087" x="0px" y="0px" viewBox="0 0 391.961 391.961" style="position:relative; top: 16px; width: 40px;enable-background:new 0 0 391.961 391.961;" xml:space="preserve">
+            <div class="col-md-10 justify-content-end" style="border: 1px solid #e0e0e0; border-radius:5px">
+                <form action="" class="">
+                    <input class="w-100" value="" type="text" placeholder="جستجوی محصولات" style="border-radius: 5px; padding: 10px;font-size: 13px; color: #c0c0c0">
+                    {{--                                                <button class="btn btn-primary" type="submit">send</button>--}}
+                </form>
+            </div>
+        </div>
+        <div class="row col-md-4" style="">
+            <div class="col-md-5 d-flex">
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-6087" x="0px" y="0px" viewBox="0 0 391.961 391.961" style="width: 40px;enable-background:new 0 0 391.961 391.961;" xml:space="preserve">
                         <path d="M142.293,89.456c2.175,4.47,0.411,9.856-4.058,12.031C92.006,123.985,63.48,169.879,63.48,221.259v36.332 c0,4.971-4.415,9.371-9.385,9.371H35.333c-15.308,0-27.853-12.824-27.853-28.131v-41.042c0-12.095,7.786-22.717,19.324-26.432 c4.731-1.521,9.836,1.077,11.36,5.809s-1.1,9.802-5.832,11.325c-4.008,1.291-6.853,5.114-6.853,9.298v41.042 c0,5.382,4.471,10.131,9.853,10.131H45.48v-27.702c0-28.889,7.988-56.973,23.464-81.214c15.06-23.589,36.104-42.519,61.221-54.743 C134.635,83.127,140.118,84.987,142.293,89.456z M244.406,109.016c4.421-4.508,8.597-8.767,8.597-18.895 c0-14.057-11.438-25.494-25.496-25.494c-14.058,0-25.494,11.437-25.494,25.494c0,4.971,4.029,9,9,9s9-4.029,9-9 c0-4.132,3.362-7.494,7.496-7.494c4.132,0,7.494,3.362,7.494,7.494c0,2.775,0,2.775-3.448,6.292 c-0.525,0.535-1.083,1.104-1.676,1.721l-25.263,26.375c-0.072,0.075-0.135,0.151-0.135,0.228v0.001c0,0.005-0.088,0.011-0.093,0.017 c-0.003,0.003-0.045,0.006-0.048,0.01c-0.003,0.002-0.024,0.005-0.026,0.008c-0.698,0.782-1.245,1.656-1.623,2.578 c-0.431,1.052-0.673,2.203-0.673,3.41c0,1.265,0.258,2.468,0.729,3.56c0.461,1.072,0.986,2.071,1.881,2.93 c0.002,0.002-0.147,0.004-0.147,0.006v0.001c0,0.006,0.165-0.296,0.17-0.296h0.077c0.007,0,0.051,0.169,0.057,0.175 c0.001,0.001,0.021,0.08,0.021,0.081c0.884,0.836,1.901,1.498,2.971,1.909c0.885,0.34,1.842,0.564,2.835,0.607 c0.009,0.002,0.018,0.111,0.026,0.111c0.124,0.005,0.25,0.118,0.374,0.118c0.01,0,0.019,0,0.028,0h32.328c4.971,0,9-4.029,9-9 s-4.029-9-9-9h-11.228l10.72-11.257C243.407,110.135,243.922,109.51,244.406,109.016z M384.48,197.787v41.042 c0,15.307-12.045,28.131-27.353,28.131h-16.622c-5.46,17-14.121,33.477-25.787,48.188c-19.169,24.173-45.546,41.749-74.88,50.601 c-1.319,14.807-13.792,26.21-28.933,26.21h-29.349c-16.017,0-29.048-12.982-29.048-28.999c0-16.02,13.031-29.001,29.048-29.001 h29.349c10.542,0,19.791,5.838,24.882,14.264c55.473-17.164,93.578-68.199,93.578-126.965c0-13.29-1.936-26.315-5.763-38.857 c-17.421,13.779-39.416,22.015-63.301,22.015c-56.363,0-102.218-45.849-102.218-102.211S203.939,0,260.303,0 S362.52,45.878,362.52,102.24c0,25.336-9.264,48.593-24.584,66.472c6.259,16.832,9.43,34.617,9.43,52.732 c0,9.278-0.819,18.517-2.434,27.517h12.195c5.382,0,9.353-4.749,9.353-10.131v-41.042c0-4.185-2.646-8.008-6.654-9.298 c-4.731-1.523-7.179-6.593-5.657-11.325c1.524-4.731,6.491-7.333,11.223-5.809C376.932,175.07,384.48,185.692,384.48,197.787z M221.954,363.107c0-0.734-0.072-1.258-0.209-1.952c-0.024-0.106-0.047-0.309-0.067-0.415c-1.123-4.912-5.526-8.779-10.771-8.779 h-29.349c-6.092,0-11.048,4.906-11.048,10.998c0,6.095,4.956,11.002,11.048,11.002h29.349 C216.998,373.961,221.954,369.198,221.954,363.107z M344.52,102.194c0-46.438-37.78-84.217-84.218-84.217 s-84.218,37.78-84.218,84.217s37.78,84.217,84.218,84.217S344.52,148.632,344.52,102.194z M309.536,64.961h0.027h-0.041 c-4.971,0-9.04,3.696-9.04,8.667v16.707c0,4.052-3.426,7.32-7.501,7.32c-4.131,0-7.499-3.362-7.499-7.494V73.627 c0-4.971-4.029-9-9-9s-9,4.029-9,9V90.16c0,14.057,11.443,25.494,25.501,25.494c2.606,0,5.499-0.393,7.499-1.123v16.23 c0,4.971,4.029,9,9,9s9-4.029,9-9v-40.28c0-0.107,0-0.214,0-0.321V73.627C318.48,68.657,314.506,64.961,309.536,64.961z"></path>
                     </svg>
-
-                    <P class="d-inline-block m-0" style="color: rgba(127, 127, 127, 1); font-size: 12px; margin-right: 3px !important;position: relative;top: 6px;">نیاز به راهنمایی دارید؟</P>
-                    <P class="m-0" style="position: relative; right: 48px; font-weight: 800">09306909447</P>
+                </div>
+                <div>
+                    <P class="d-inline-block m-0" style="color: rgba(127, 127, 127, 1); font-size: 12px; margin-right: 3px !important;">نیاز به راهنمایی دارید؟</P>
+                    <P class="m-0" style="font-weight: 800">09306909447</P>
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-7 d-flex flex-wrap align-items-center justify-content-between">
+                <div style="border: 1px solid #e0e0e2; padding: 0.5rem; border-radius: 5px">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                    </svg>
+                    <a href="#/" style="font-size: 12px; color: rgba(127, 127, 127, 1)">
+                        ورود به حساب کاربری
+                    </a>
+                </div>
+                <div style="border-left:2px #e0e0e2 solid;">&nbsp;</div>
+                <div class="" style="">
+                    <a href="#" style="color: rgba(127, 127, 127, 1)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
 </section>
 <section id="banner-1" class="container-fluid mb-2rem" style="background-color: #EFEFEF; padding: 2.5rem 0;">
     <div class="container">
@@ -240,7 +254,24 @@
     </div>
 </section>
 <section id="footer" class="container-fluid d-flex justify-content-center" style="background-color: #EFEFEF">
-    <footer class="row container" style="padding: 2.5rem 0;">
+    <footer class="container" style="padding: 2.5rem 0;">
+        <div class="certificate col-md-12 text-center" style="padding-bottom: 2.5rem;">
+            <a class="d-inline-block" href="#">
+                <div style="padding: 1rem; border-radius: 10px; border: 1px solid #e0e0e6; background-color: #fff">
+                    <img src="{{ asset('website/img/certificate/rezi.png') }}" alt="" style="height: 70px; width: 70px;">
+                </div>
+            </a>
+            <a class="d-inline-block" href="#">
+                <div style="padding: 1rem; border-radius: 10px; border: 1px solid #e0e0e6; background-color: #fff">
+                    <img src="{{ asset('website/img/certificate/logo.png') }}" alt="" style="height: 70px; width: 70px;">
+                </div>
+            </a>
+            <a class="d-inline-block" href="#">
+                <div style="padding: 1rem; border-radius: 10px; border: 1px solid #e0e0e6; background-color: #fff">
+                    <img src="{{ asset('website/img/certificate/kasbokar.png') }}" alt="" style="height: 70px; width: 70px;">
+                </div>
+            </a>
+        </div>
         <div class="row">
             <div class="col-md-4">
                 <div class="text-center mb-3">
@@ -254,23 +285,23 @@
             </div>
             <div class="col-md-8 row">
                 <div class="col-md-3">
-                    <a href="#" class="d-block text-center mb-4">اطلاعات بیشتر</a>
-                    <ul class="">
+                    <a href="#" class="d-block mb-3">اطلاعات بیشتر</a>
+                    <ul class="" style="list-style-type: disc; color: #777;">
                         <li><a href="#">سوالات متداول</a></li>
                         <li><a href="#">ارتباط با ما</a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
+                        <li><a href="#">فروشگاه ما</a></li>
+                        <li><a href="#">هزینه ارسال</a></li>
+                        <li><a href="#">کاتالوگ ها</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <a href="#" class="d-block text-center mb-4">دسته بندی ها</a>
-                    <ul class="">
+                    <a href="#" class="d-block mb-3">دسته بندی محصولات</a>
+                    <ul style="list-style-type: disc; color: #777;">
                         <li><a href="#">سوالات متداول</a></li>
                         <li><a href="#">ارتباط با ما</a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
+                        <li><a href="#">فیوز</a></li>
+                        <li><a href="#">خازن</a></li>
+                        <li><a href="#">سیم</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3"></div>
@@ -312,23 +343,6 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="certificate col-md-12 text-center">
-                <a class="d-inline-block" href="#">
-                    <div style="padding: 1rem; border-radius: 10px; border: 1px solid #e0e0e6; background-color: #fff">
-                        <img src="{{ asset('website/img/certificate/rezi.png') }}" alt="" style="height: 70px; width: 70px;">
-                    </div>
-                </a>
-                <a class="d-inline-block" href="#">
-                    <div style="padding: 1rem; border-radius: 10px; border: 1px solid #e0e0e6; background-color: #fff">
-                        <img src="{{ asset('website/img/certificate/logo.png') }}" alt="" style="height: 70px; width: 70px;">
-                    </div>
-                </a>
-                <a class="d-inline-block" href="#">
-                    <div style="padding: 1rem; border-radius: 10px; border: 1px solid #e0e0e6; background-color: #fff">
-                        <img src="{{ asset('website/img/certificate/kasbokar.png') }}" alt="" style="height: 70px; width: 70px;">
-                    </div>
-                </a>
             </div>
         </div>
     </footer>
