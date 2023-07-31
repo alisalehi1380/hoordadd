@@ -12,15 +12,24 @@
     <link rel="stylesheet" href="{{ asset('bootstrap/bootstrap.rtl.css') }}">
     <link rel="stylesheet" href="{{ asset('website/css/styleWebsite.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <style>
     body {
 
     }
 
+    a {
+        color: #616161;
+    }
+
     .f-14 {
         font-size: 14px;
         line-height: 1rem;
+    }
+
+    ul {
+        margin: 0;
     }
 
     .mb-2rem {
@@ -31,14 +40,99 @@
         border-radius: 5px;
     }
 
-    #navbar nav div ul > li > a {
+    #navbar nav div ul li a {
         color: #616161;
         font-size: 13px;
     }
 
-    #navbar nav div ul > li:hover {
+    #category-1 div.container {
+        padding: 2.5rem 0;
+    }
+
+    #category-1 div.container a {
+        margin: 0.5rem 0;
+    }
+
+    #category-1 div.container a img {
+        margin: 0.5rem 0;
+    }
+
+    #navbar-categories {
+        z-index: 1000;
+        min-width: 1200px;
+        border-radius: 0 0 5px 5px;
+        display: none;
+        background-color: #f7f7f7;
+        position: absolute;
+        top: 100%;
+        overflow: hidden;
+        min-height: 410px;
+        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .15);
+        border-radius: 0 0 5px 5px;
+    }
+
+    .sub-menu-1 {
+        background-color: white;
+        padding: 0.5rem;
+        position: absolute;
+        right: 20%;
+        width: 80%;
+        height: 100%;
+        top: 0;
+        display: inline-flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .sub-menu-1 > li > a {
+        font-size: 14px;
+        font-weight: bold;
+        color: black;
+        margin-right: 5px;
+    }
+
+    .sub-menu-1 > li > a::before {
+        width: 2px;
+        height: 18px;
+        content: " ";
+        margin-left: 8px;
+        border-radius: 50px;
+        background-color: #ef394e;
+        display: inline-flex;
+        vertical-align: middle;
+    }
+
+    .sub-menu-1 > li > ul > li > ul {
+        width: 25%;
+    }
+
+
+    .a > li > a {
+        padding: 14px 8px;
+        display: flex;
+    }
+
+    .a > li:hover {
+        background-color: white;
+        border-radius: 0 5px 5px 0;
+    }
+
+    .sub-menu ul li {
+        font-size: 12px;
+        padding: 0.25rem;
+    }
+
+    #navbar nav > div > ul > li:hover {
         border-bottom: 2px solid rgb(246, 65, 45);
         /*transition: all 0.3s ease-in-out;*/
+    }
+
+    #navbar nav div ul > li:hover > div {
+
+        display: flex !important;
+
+        /*transition: all 0.3s ease-in-out;*/
+
     }
 
     /*Small devices (landscape phones, less than 768px)*/
@@ -105,11 +199,126 @@
     </div>
 
 
-    <nav class="navbar justify-content-between align-items-center" style="max-width: 1500px;margin: auto;">
+    <nav class="navbar justify-content-between align-items-center p-0" style="max-width: 1500px;margin: auto;">
         <div class="">
             <ul class="d-flex">
-                <li class="nav-item" style="border-left: 1px solid #e0e0e2;"><a class="nav-link" href="">دسته بندی تجهیزات</a></li>
-                <li class="nav-item" style="border-left: 1px solid #e0e0e2;"><a class="nav-link" href="">برند ها</a></li>
+                <li class="nav-item" style="border-left: 1px solid #e0e0e2;">
+                    <a class="nav-link" href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" style="margin-left: 10px;" width="20" height="20">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                        </svg>
+                        دسته بندی تجهیزات
+                    </a>
+                    <div id="navbar-categories" class="">
+                        <ul class="a" style="padding: 0.5rem 0.5rem 0.5rem 0; width: 20%">
+                            <li class="">
+                                <a href="" class="">انواع خازن و تجهیزات بانک خازنی</a>
+                                <ul class="sub-menu-1" style="">
+                                    <li>
+                                        <a href="" style="font-size: 14px;">
+                                            خازن سه فاز فشار ضعیف
+                                            <i style='font-size:12px' class='fas'>&#xf104;</i>
+                                        </a>
+                                        <ul class="sub-menu" style="">
+                                            <li><a href="">خازن سه فاز فراکو آلمان FRAKO</a></li>
+                                            <li><a href="">خازن سه فاز لیفاسا اسپانیا LIFASA</a></li>
+                                            <li><a href="">خازن سه فاز صبا زیمنس SABA-SIEMENS</a></li>
+                                            <li><a href="">خازن سه فاز روغنی هیدرا (HYDRA ( AEG</a></li>
+                                            <li><a href="">خازن سه فاز PKC</a></li>
+                                            <li><a href="">خازن سه فاز اشنایدر SCHNEIDER</a></li>
+                                            <li><a href="">خازن سه فاز فراکوه FARAKOH</a></li>
+                                            <li><a href="">خازن سه فاز اسپانیایی RTR</a></li>
+                                            <li><a href="">خازن سه فاز فشار ضعیف ایسکرا ISKRA</a></li>
+                                            <li><a href="">خازن سه فاز اپکاس آلمان EPCOS</a></li>
+                                            <li><a href="">خازن سه فاز پارس شریم PARS.GH</a></li>
+                                            <li><a href="">سایر برندهای خازن سه فاز</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">رگولاتور بانک خازنی</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="">رگولاتور بلوک آلمان BELUK</a></li>
+                                            <li><a href="">رگولاتور فراکو آلمان FRAKO</a></li>
+                                            <li><a href="">رگولاتور زایلوگ ایران ZILUG</a></li>
+                                            <li><a href="">رگولاتور لیفاسا اسپانیا LIFASA</a></li>
+                                            <li><a href="">رگولاتور RTR اسپانیا</a></li>
+                                            <li><a href="">رگولاتور خازنی PKC</a></li>
+                                            <li><a href="">رگولاتور ایسکرا ISKRA</a></li>
+                                            <li><a href="">رگولاتور سیرکاتور اسپانیا CIRCUTOR</a></li>
+                                            <li><a href="">رگولاتور لواتو ایتالیا LOVATO</a></li>
+                                            <li><a href="">رگولاتور خازنی اشنایدر SCHNEIDER</a></li>
+                                            <li><a href="">رگولاتور پارس مت PARS-MAT</a></li>
+                                            <li><a href="">سایر برند های رگولاتور بانک خازنی</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">کنتاکتور خازنی</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="">کنتاکتور خازنی PKC</a></li>
+                                            <li><a href="">کنتاکتور خازنی R K (RADE CONCAR)</a></li>
+                                            <li><a href="">کنتاکتور خازنی اشنایدر SCHNEIDER</a></li>
+                                            <li><a href="">کنتاکتور خازنی ABN</a></li>
+                                            <li><a href="">سایر برندهای کنتاکتور خازنی</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">فیلتر هارمونیک خازنی</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="">فیلتر هارمونیک فراکوه FARAKOH</a></li>
+                                            <li><a href="">فیلتر هارمونیك لیفاسا LIFASA</a></li>
+                                            <li><a href="">فیلتر هارمونیك PKC</a></li>
+                                            <li><a href="">فیلتر هارمونیک پارس PARS GH. SHREEM</a></li>
+                                            <li><a href="">فیلتر هارمونیک فراپیام BERK</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">کنتاکتور هارمونیکی</a></li>
+                                    <li><a>بانک خازنی اتوماتیک آماده نصب</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="">سه فاز، آماده نصب، برحسب کیلووار</a></li>
+                                            <li><a href="">تکفاز/ سه فاز، آماده نصب، برحسب آمپر</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">بدنه، مونتاژ و خدمات تابلو بانک خازنی</a>
+                                    </li>
+                                    <li><a href="">تجهیزات بانک خازنی فشار متوسط</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="">خازن فشار متوسط MV</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">کنتاکتور خازنی تایریستوری ( سریع )</a>
+                                    </li>
+                                    <li>
+                                        <a href="">رگولاتور تایریستوری ( سریع )</a>
+                                    </li>
+                                    <li><a href="">خازن تکفاز فشار ضعیف</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="">خازن تکفاز فشار ضعیف ایتالیا DUCATI</a></li>
+                                            <li><a href="">خازن تکفاز فشار ضعیف PKC</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">خازن برای سایر کاربردها</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="">خازن UPS</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="">انواع کنتاکتور، بیمتال و رله</a>
+                            <li><a href="">انواع کلید اتوماتیک / دستی و فیوز</a></li>
+                            <li><a href="">انواع درایو (اینورتر) و سافت استارتر</a></li>
+                            <li><a href="">انواع سیم و کابل</a></li>
+                            <li><a href="">سایر تجهیزات برق صنعتی</a></li>
+                            <li><a href="">انواع تابلو برق صنعتی</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item" style="border-left: 1px solid #e0e0e2;">
+                    <a class="nav-link" href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" style="margin-left: 10px;" width="20" height="20">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                        </svg>
+                        برند ها</a>
+                </li>
                 <li class="nav-item"><a class="nav-link" href=""><span class=""></span><span class="">خانه</span></a></li>
                 <li class="nav-item"><a class="nav-link" href=""><span class=""></span><span class="">مجله تخصصی ( آموزش جامع )</span></a></li>
                 <li class="nav-item"><a class="nav-link" href=""><span class=""></span><span class="">استخدام در تسلاکالا</span></a></li>
@@ -120,9 +329,7 @@
 
         <div class="">
             <ul class="">
-                <li>
-                    <a href="">پیشنهادهای شگفت انگیز</a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="">پیشنهادهای شگفت انگیز</a></li>
             </ul>
         </div>
     </nav>
@@ -191,25 +398,26 @@
     </div>
 </section>
 <section id="category-1" class="container-fluid d-flex justify-content-center mb-2rem" style="background-color: #EFEFEF">
-    <div class="container row text-center" style="padding: 2.5rem 0;">
-        <a class="col-md-2" href="#">
+    <div class="container d-flex flex-wrap text-center justify-content-center">
+        <a class="col-12 col-md-2" href="#">
             <img src="{{ asset('website/img/category/1/light-switch.png') }}" alt="product->title">
+            <p class="m-0">کلید پریز</p>
+        </a>
+        <a class="col-12 col-md-2" href="#">
+            <img src="{{ asset('website/img/category/1/light-bulb.png') }}" alt="product->title">
             <p class="m-0">لامپ</p>
-        </a><a class="col-md-2" href="#">
+        </a>
+        <a class="col-12 col-md-2" href="#">
+            <img src="{{ asset('website/img/category/1/cable.png') }}" alt="product->title">
+            <p class="m-0">سیم</p>
+        </a>
+        <a class="col-12 col-md-2" href="#">
+            <img src="{{ asset('website/img/category/1/outlet.png') }}" alt="product->title">
+            <p class="m-0">دوشاخه و محافظ</p>
+        </a>
+        <a class="col-12 col-md-2" href="#">
             <img src="{{ asset('website/img/category/1/light-switch.png') }}" alt="product->title">
-            <p class="m-0">لامپ</p>
-        </a><a class="col-md-2" href="#">
-            <img src="{{ asset('website/img/category/1/light-switch.png') }}" alt="product->title">
-            <p class="m-0">لامپ</p>
-        </a><a class="col-md-2" href="#">
-            <img src="{{ asset('website/img/category/1/light-switch.png') }}" alt="product->title">
-            <p class="m-0">لامپ</p>
-        </a><a class="col-md-2" href="#">
-            <img src="{{ asset('website/img/category/1/light-switch.png') }}" alt="product->title">
-            <p class="m-0">لامپ</p>
-        </a><a class="col-md-2" href="#">
-            <img src="{{ asset('website/img/category/1/light-switch.png') }}" alt="product->title">
-            <p class="m-0">لامپ</p>
+            <p class="m-0">فیوز</p>
         </a>
     </div>
 </section>
@@ -300,7 +508,7 @@
 
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+            {{--            <div class="swiper-pagination"></div>--}}
 
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
@@ -447,10 +655,10 @@
         },
 
         // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
+        // pagination: {
+        //     el: '.swiper-pagination',
+        //     clickable: true,
+        // },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -461,9 +669,6 @@
 
 
 <script src="{{ asset('bootstrap/bootstrap.bundle.min.js') }}"></script>
-<script>
-
-</script>
 </body>
 </html>
 
