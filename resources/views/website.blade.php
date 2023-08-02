@@ -73,7 +73,8 @@
 
     #best-selling .container .swiper .swiper-wrapper > div {
         border: 1px solid;
-        border-radius: 5px
+        border-radius: 5px;
+        margin-left: 8px;
     }
 
     #best-selling .container .swiper .swiper-wrapper .swiper-slide img {
@@ -154,8 +155,16 @@
 
     }
 
+    #best-selling div.swiper-slide {
+        max-width: 250px;
+    }
+
     /*Small devices (landscape phones, less than 768px)*/
     @media (max-width: 768px) {
+        #best-selling div.swiper-slide {
+            max-width: 155px;
+        }
+
         #banner-1 div.container > .row > .col-md-8 > .col-md-4 {
             display: none !important;
         }
@@ -167,6 +176,11 @@
         #category-3 > div.row div.col-md-6:nth-child(2) {
             margin-top: 1rem;
         }
+
+        #banner-2 div.col-md-6:nth-child(1) {
+            margin-bottom: 1rem;
+        }
+
     }
 </style>
 <body>
@@ -444,7 +458,7 @@
     <div class="container">
         <p>پر فروش ترین محصولات</p>
         <hr/>
-        <div class="row swiper bestSellers" style="padding: 2.5rem 0;">
+        <div class="row swiper bestSellers-swiper" style="padding: 2.5rem 0;">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -561,7 +575,7 @@
     <div class="container text-center">
         <p class="mb-3">برند هایی که کار میکنیم</p>
         <hr/>
-        <div class="col-md-10 row swiper" style="padding: 2.5rem 0;">
+        <div class="col-md-10 row swiper brands-swiper" style="padding: 2.5rem 0;">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -710,71 +724,74 @@
 
 
 <script>
-    (function (){
-        new Swiper('.bestSellers', {
 
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
+    new Swiper('.bestSellers-swiper', {
 
-            breakpoints: {
-                // when window width is >= 480px
-                480: {
-                    slidesPerView: 3,
-                    spaceBetween: 10
-                },
-                // when window width is >= 640px
-                640: {
-                    slidesPerView: 5,
-                    // spaceBetween: 10,
-                }
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        autoplay: {
+            delay: 10000,
+            disableOnInteraction: false,
+        },
+
+        breakpoints: {
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 2,
             },
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 5,
+            }
+        },
 
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+    new Swiper('.brands-swiper', {
+
+        // Optional parameters
+        direction: 'horizontal',
+
+        loop: true,
+        centeredSlides: true,
+
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 3,
+                // spaceBetween: 60
             },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 5,
+                spaceBetween: 30,
+            }
+        },        // If we need pagination
+        // pagination: {
+        //     el: '.swiper-pagination',
+        //     clickable: true,
+        // },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
 
-        new Swiper('.swiper', {
-
-            // Optional parameters
-            direction: 'horizontal',
-
-            loop: true,
-            centeredSlides: true,
-
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
-            breakpoints: {
-                // when window width is >= 480px
-                480: {
-                    slidesPerView: 3,
-                    // spaceBetween: 60
-                },
-                // when window width is >= 640px
-                640: {
-                    slidesPerView: 5,
-                    spaceBetween: 30,
-                }
-            },        // If we need pagination
-            // pagination: {
-            //     el: '.swiper-pagination',
-            //     clickable: true,
-            // },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    })();
 </script>
 
 </body>
