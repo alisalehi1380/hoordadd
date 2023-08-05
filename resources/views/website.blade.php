@@ -90,7 +90,6 @@
         color: red
     }
 
-
     .sub-menu-1 {
         background-color: white;
         padding: 0.5rem;
@@ -126,7 +125,6 @@
         width: 25%;
     }
 
-
     .a > li > a {
         padding: 14px 8px;
         display: flex;
@@ -156,7 +154,21 @@
     }
 
     #best-selling div.swiper-slide {
-        max-width: 250px;
+        max-width: 250px !important;
+    }
+
+    #newest-products div.swiper-slide {
+        max-width: 250px !important;
+    }
+
+    #newest-products .swiper-wrapper > div {
+        border: 1px solid;
+        border-radius: 5px;
+        margin-left: 8px;
+    }
+
+    #newest-products .swiper-slide {
+        padding: 0.5rem 0.75rem;
     }
 
     /*Small devices (landscape phones, less than 768px)*/
@@ -230,8 +242,6 @@
             </div>
         </div>
     </div>
-
-
     <nav class="navbar justify-content-between align-items-center p-0" style="max-width: 1500px;margin: auto;">
         <div class="">
             <ul class="d-flex">
@@ -366,8 +376,6 @@
             </ul>
         </div>
     </nav>
-
-
 </section>
 {{--<section id="banner-1" class="container-fluid mb-2rem" style="background-color: #EFEFEF; padding: 2.5rem 0;">--}}
 {{--    <div class="container">--}}
@@ -388,47 +396,90 @@
 {{--    </div>--}}
 {{--</section>--}}
 <section id="newest-products" class="container mb-2rem">
-    <div class="container">
-        <p>جدید ترین محصولات</p>
-        <hr/>
-        <div class="row justify-content-center">
-            <div class="col-md-2 mx-1" style="border: 1px solid; border-radius: 5px">
-                <div class="row">
-                    <img style="max-height: 230px; max-width: 230px;" src="{{ asset('website/img/products/newest-products/doshakh-400x400.jpg') }}" alt="product->title">
+    <p>جدید ترین محصولات</p>
+    <hr/>
+    <div class="row swiper bestSellers-swiper" style="padding: 2.5rem 0;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="">
+                    <img style="" src="{{ asset('website/img/products/newest-products/doshakh-400x400.jpg') }}" alt="product->title">
+                </div>
+                <div>
+                    <p>دوشاخ نری سیار پارت الکتریک مدل 9128</p>
+                    <p style="color: red">قیمت : 300,000 تومان</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="">
+                    <img style="" src="{{ asset('website/img/products/newest-products/doshakh-400x400.jpg') }}" alt="product->title">
                 </div>
                 <p>دوشاخ نری سیار پارت الکتریک مدل 9128</p>
                 <p style="color: red">قیمت : 300,000 تومان</p>
             </div>
-            <div class="col-md-2 mx-1" style="border: 1px solid; border-radius: 5px">
-                <div class="row">
-                    <img style="max-height: 230px; max-width: 230px;" src="{{ asset('website/img/products/newest-products/doshakh-400x400.jpg') }}" alt="product->title">
+            <div class="swiper-slide">
+                <div class="">
+                    <img style="" src="{{ asset('website/img/products/newest-products/doshakh-400x400.jpg') }}" alt="product->title">
                 </div>
                 <p>دوشاخ نری سیار پارت الکتریک مدل 9128</p>
                 <p style="color: red">قیمت : 300,000 تومان</p>
             </div>
-            <div class="col-md-2 mx-1" style="border: 1px solid; border-radius: 5px">
-                <div class="row">
-                    <img style="max-height: 230px; max-width: 230px;" src="{{ asset('website/img/products/newest-products/doshakh-400x400.jpg') }}" alt="product->title">
+            <div class="swiper-slide">
+                <div class="">
+                    <img style="" src="{{ asset('website/img/products/newest-products/doshakh-400x400.jpg') }}" alt="product->title">
                 </div>
                 <p>دوشاخ نری سیار پارت الکتریک مدل 9128</p>
                 <p style="color: red">قیمت : 300,000 تومان</p>
             </div>
-            <div class="col-md-2 mx-1" style="border: 1px solid; border-radius: 5px">
-                <div class="row">
-                    <img style="max-height: 230px; max-width: 230px;" src="{{ asset('website/img/products/newest-products/doshakh-400x400.jpg') }}" alt="product->title">
+            <div class="swiper-slide">
+                <div class="">
+                    <img style="" src="{{ asset('website/img/products/newest-products/doshakh-400x400.jpg') }}" alt="product->title">
                 </div>
                 <p>دوشاخ نری سیار پارت الکتریک مدل 9128</p>
                 <p style="color: red">قیمت : 300,000 تومان</p>
             </div>
-            <div class="col-md-2 mx-1" style="border: 1px solid; border-radius: 5px">
-                <div class="row">
-                    <img style="max-height: 230px; max-width: 230px;" src="{{ asset('website/img/products/newest-products/doshakh-400x400.jpg') }}" alt="product->title">
+            <div class="swiper-slide">
+                <div class="">
+                    <img style="" src="{{ asset('website/img/products/newest-products/doshakh-400x400.jpg') }}" alt="product->title">
+                </div>
+                <p>دوشاخ نری سیار پارت الکتریک مدل 9128</p>
+                <p style="color: red">قیمت : 300,000 تومان</p>
+            </div>
+            <div class="swiper-slide">
+                <div class="">
+                    <img style="" src="{{ asset('website/img/products/newest-products/doshakh-400x400.jpg') }}" alt="product->title">
+                </div>
+                <p>دوشاخ نری سیار پارت الکتریک مدل 9128</p>
+                <p style="color: red">قیمت : 300,000 تومان</p>
+            </div>
+            <div class="swiper-slide">
+                <div class="">
+                    <img style="" src="{{ asset('website/img/products/newest-products/doshakh-400x400.jpg') }}" alt="product->title">
+                </div>
+                <p>دوشاخ نری سیار پارت الکتریک مدل 9128</p>
+                <p style="color: red">قیمت : 300,000 تومان</p>
+            </div>
+            <div class="swiper-slide">
+                <div class="">
+                    <img style="" src="{{ asset('website/img/products/newest-products/doshakh-400x400.jpg') }}" alt="product->title">
+                </div>
+                <p>دوشاخ نری سیار پارت الکتریک مدل 9128</p>
+                <p style="color: red">قیمت : 300,000 تومان</p>
+            </div>
+            <div class="swiper-slide">
+                <div class="">
+                    <img style="" src="{{ asset('website/img/products/newest-products/doshakh-400x400.jpg') }}" alt="product->title">
                 </div>
                 <p>دوشاخ نری سیار پارت الکتریک مدل 9128</p>
                 <p style="color: red">قیمت : 300,000 تومان</p>
             </div>
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
+
 </section>
 <section id="category-1" class="container-fluid d-flex justify-content-center mb-2rem" style="background-color: #EFEFEF">
     <div class="container d-flex flex-wrap text-center justify-content-center">
@@ -730,6 +781,7 @@
         // Optional parameters
         direction: 'horizontal',
         loop: true,
+        freeMode: false,
 
         autoplay: {
             delay: 10000,
@@ -764,6 +816,7 @@
         direction: 'horizontal',
 
         loop: true,
+        freeMode: false,
         centeredSlides: true,
 
         autoplay: {
